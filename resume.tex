@@ -1,0 +1,192 @@
+\documentclass[10pt]{article}
+
+\usepackage[left=1in, right=1in, top=0.5in, bottom=0.5in]{geometry}
+\usepackage[unicode,
+            pdfencoding=auto,
+            pdfinfo={
+              Title={stephenmcgruer/resume},
+              Author={Stephen McGruer},
+              Subject={Stephen McGruer Résumé},
+              Keywords={}
+            },
+            ]{hyperref}
+\usepackage{longtable}
+\usepackage{multicol}
+\usepackage{parskip}
+\usepackage{tabularx}
+\usepackage[absolute]{textpos}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{xltxtra}
+\usepackage{xspace}
+
+% Include the generic setup/commands/etc.
+\include{misc}
+
+\begin{document}
+\pagestyle{empty}
+
+%%%%% Title. %%%%%%
+
+\par{\centering {\Huge Stephen \textsc{McGruer} }\bigskip\par}
+
+%%%%% Contact information. %%%%%%
+
+\section{Contact Details}
+
+\begin{multicols}{2}
+\setlength{\parskip}{0pt}
+
+\begin{tabularx}{\linewidth}{l X}
+  \textsc{Website}     & \href{http://www.stephenmcgruer.com/}{stephenmcgruer.com} \\
+  \textsc{email}       & \href{mailto:stephen.mcgruer@gmail.com}{stephen.mcgruer@gmail.com} \\
+\end{tabularx}
+
+\vfill
+\columnbreak
+
+\begin{tabularx}{\linewidth}{l X}
+  \textsc{Twitter}     & \href{https://twitter.com/stephenmcgruer}{@stephenmcgruer} \\
+  \textsc{LinkedIn}    & \href{https://www.linkedin.com/in/stephenmcgruer}{linkedin.com/in/stephenmcgruer} \\
+\end{tabularx}
+
+\end{multicols}
+
+%%%%% Education. %%%%%%
+
+\section{Education}
+
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}r l p{5.5cm} r}
+  \degree{Jul 2013}%
+  {M.Inf (Hons. First Class)}%
+  {Informatics}%
+  {University of Edinburgh}
+\end{tabular*}
+
+%%%%% Work Experience. %%%%%%
+
+\vspace{1em}
+\section{Experience}
+
+\setlength\LTleft{0pt}
+\setlength\LTright{0pt}
+\vspace{-0.5em}
+
+\begin{longtable}{@{\extracolsep{\fill}} l | l r}
+
+  \experience{06/12 - 09/12}%
+    {Software Engineering Intern}%
+    {at}%
+    {Google Mountain View}%
+    {Software developer in the Google Web Search team, maintaining and
+     developing the \skill{Google Search} backend. Adapted the
+     \href{https://www.eclipse.org/mat/}{Eclipse Memory Analyzer} for automated
+     memory usage monitoring of a large-scale embedded JVM, and reduced memory
+     inefficiencies in a \java/\cpp \jni interface. Also tutored students in the
+     \href{https://www.google.com/edu/programs/computer-science-summer-institute-cssi/}{Google CSSI program},
+     helping them with \python, \skill{Google App Engine}, and project design
+     and management.}
+
+  \experience{01/12 - 05/12}%
+    {Tutor}%
+    {at}%
+    {School of Informatics, Edinburgh University}%
+    {Mentored first year Informatics students in the design and development of
+     a \java group project, and organized the final
+     \href{https://sites.google.com/site/2012oop/}{demonstration day.}
+     Supervised programming labs, providing help and feedback on students'
+     code.}
+
+  \experience{06/11 - 09/11}%
+    {Software Engineering Intern}%
+    {at}%
+    {Google London}%
+    {Software developer in the Android Marketplace Publisher Website team.
+     Working with the \skill{Google Web Toolkit} and \skill{Google Chart Tools},
+     increased the visibility of Android app crashes to developers. Refactored
+     large amounts of existing code to follow a Model-View-Presenter design.}
+
+  \experience{06/10 - 09/10}%
+    {Software Engineering Intern}%
+    {at}%
+    {Thales Optronics UK}%
+    {Working on an in-house resource management application, created a \jsp
+     interface between a \php webpage and a
+     \href{https://www.jboss.org/drools/}{JBoss Drools} business rules engine
+     to allow non-technical employees to easily define complex
+     resource-management requirements and processes.}
+
+\end{longtable}
+
+%%%%% Skills/Languages %%%%%%
+
+\vspace{-1em}
+\section{Skills \& Languages}
+\vspace{-1em}
+
+\begin{multicols}{4}
+\raggedcolumns
+
+\begin{itemize}
+
+% Remove the normal bullet points.
+\renewcommand{\labelitemi}{}
+
+% Don't bold skill names here.
+\renewcommand{\skill}{\textnormal}
+
+% Cluster things a bit closer.
+\setlength{\itemsep}{1pt}
+\setlength{\parskip}{0pt}
+\setlength{\parsep}{0pt}
+
+\skills{\asthree}{\oneskill}
+\skills{\bash}{\twoskill}
+\skills{\ccpp}{\twoskill}
+\skills{\git}{\twoskill}
+\skills{GNU/\linux}{\oneskill}
+\skills{\html}{\oneskill}
+\skills{\java}{\threeskill}
+\skills{\js}{\oneskill}
+\skills{\LaTeX}{\twoskill}
+\skills{\matlab}{\oneskill}
+\skills{\python}{\twoskill}
+\skills{\ruby}{\oneskill}
+\skills{\svn}{\oneskill}
+\skills{\scala}{\oneskill}
+
+\end{itemize}
+
+\end{multicols}
+\vspace{-1em}
+  \begin{footnotesize}
+    \oneskill Small-scale projects and/or assignments \hfill 
+    \twoskill Multiple projects and/or experience teaching \hfill
+    \threeskill Large-scale and/or multi-group projects
+  \end{footnotesize}
+
+%%%%% Honors/Awards %%%%%%
+
+\vspace{0.75em}
+\section{Honors/Awards}
+\begin{tabularx}{\textwidth}{r|X}
+2013 & Master of Informatics, Class Medal \\
+2013 & UCL CREST Final Year Computer Science Project Competition (Finalist) \\
+2011 & Netcraft Prize for Top 6 Penultimate Year Students \\
+\end{tabularx}
+
+%%%%% Activities. %%%%%%
+
+\vspace{0.75em}
+\section{Activities}
+running, baking, \href{https://github.com/stephenmcgruer}{programming}, boardgaming, gaming
+
+%%%%% Footnote. %%%%%%
+
+\null\vfill
+\footnotesize{
+  Online:  \href{http://www.stephenmcgruer.com/resume}{stephenmcgruer.com/resume} \hfill
+  Source:  \href{https://github.com/stephenmcgruer/resume}{github.com/stephenmcgruer/resume}
+}
+
+\end{document}
